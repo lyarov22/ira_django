@@ -1,0 +1,84 @@
+/* Обнуляем стили по умолчанию для всего документа */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    display: flex;
+    justify-content: center;
+}
+/* Задаем общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    max-width: 1920px;
+    min-width: 900px;
+}
+
+/* Стилизуем заголовки */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pre-nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav__h1 {
+    padding-bottom: 20px;
+}
+
+nav {
+    background-color: #0074b7;
+    color: #fff;
+    padding: 30px 0;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 900px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #0074b7;
+    color: #fff;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Специфичные стили для контента */
+/* Если есть необходимость, вы можете добавить дополнительные стили для конкретных блоков контента */

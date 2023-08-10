@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load custom_filters %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1>Недели</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Дата</th>
+            {% for field in fields %}
+                <th>{{ field.verbose_name }}</th>
+            {% endfor %}
+        
+        </tr>
+    </thead>
+    
+    <tbody>
+        {% for week in weeks %}
+<tr>
+    <td>{{ week.date }}</td>
+    {% for field in fields %}
+        {% with value=week|get_attribute:field.name %}
+            <td>{{ value }}</td>
+        {% endwith %}
+    {% endfor %}
+    
+</tr>
+{% endfor %}
+
+
+    </tbody>
+</table>
+
+<h1>Категории</h1>
+
+<ul>
+    {% for category in categories %}
+    <li>{{ category.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

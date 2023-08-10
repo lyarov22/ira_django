@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'add-week.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="week-main">
+  <h1>Добавить неделю</h1>
+  <form method="post" class="week-form">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    {{ form.as_p }}
+    <button type="submit">Добавить</button>
+  </form>
+</div>
+{% endblock %}

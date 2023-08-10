@@ -1,0 +1,46 @@
+.week-main {
+    width: 100%;
+    margin-bottom: 20px;
+    min-width: 900px;
+}
+
+.week-form {
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
+
+.week-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.week-form input, .week-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.week-form input[type="text"]:focus, .week-form select:focus {
+    border-color: #3498db;
+}
+
+.week-form button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.week-form button[type="submit"]:hover {
+    background-color: #258cd1;
+}

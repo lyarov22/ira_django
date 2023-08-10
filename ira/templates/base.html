@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invest Report App</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+<nav>
+    <ul class="nav__h1"><h1>Invest Report App</h1></ul>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/add-week">Add Week</a></li>
+        <!-- Add other navigation links as needed -->
+    </ul>
+</nav>
+
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    <p>&copy; 2023 Your App</p>
+</footer>
+    {% block addWeekScript %}{% endblock %}
+</body>
+</html>
